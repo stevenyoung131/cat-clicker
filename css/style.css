@@ -1,0 +1,20 @@
+* {
+	box-sizing:border-box;
+}
+
+.counter {
+	background: #e05200;
+	min-height: 333px;
+}
+
+.header-text {
+	color: #fcc10f;
+}
+
+#cat-img {
+	text-align: center;
+}
+
+#view, #list {
+	min-height: 400px;
+}

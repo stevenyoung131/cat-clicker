@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cat Clicker</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 main" id="header">
+            <h1 class="text-center header-text">Kitten Clicker!!</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-4 list-group main" id="list">
+        </div>
+        <div class="col-xs-8 main" id="view">
+            <div class="col-xs-12">
+                <h1 class="header-text text-center" data-bind="text: name"></h1>
+            </div>
+            <div class="col-xs-12" id="pic">
+                <img class="img-responsive center-block" src="" alt="kitten picture">
+            </div>
+            <div class="col-xs-12" id="counter">
+                <h1 class="header-text text-center">Clicks</h1>
+                <h1 class="header-text text-center">---------</h1>
+                <h1 class="header-text text-center"></h1>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="display: none;" id="admin">
+        <form action="javascript: octopus.updateCat()">
+            Cat Name:
+            <input type="text" value="" id="admin-name"><br>
+            Clicks:
+            <input type="number" value="" id="admin-clicks"><br>
+            Image Url:
+            <input type="text" value="" id="admin-url"><br>
+            <input type="submit">
+            <button type="cancel" onclick="javascript:$('#admin').toggle();">Cancel</button>
+        </form>
+    </div>
+</div>
+    <!-- <script src="js/libs/jquery.min.js"></script> -->
+    <script src="js/libs/knockout-3.4.2.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
